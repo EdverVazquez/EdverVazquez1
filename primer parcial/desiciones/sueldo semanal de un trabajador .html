@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script>
+var horast = prompt("ingrese total de horas trabajadas");
+var sueldoph = prompt("cual es el sueldo por hora del trabajador?");
+if (horast<=40)
+{
+    var sueldo=horast*sueldoph;
+    alert("su pago es de:"+sueldo+"pesos") 
+}
+else 
+{
+    var HExtras=horast-40;
+    var sueldosinhorasE=sueldoph*40;
+    var sueldoEx=HExtras*sueldoph*2;
+    var sueldoTotal=sueldoEx+sueldosinhorasE;
+    alert("su pago será de:" +sueldoTotal+"pesos")
+}
+</script>
+</html>
+
+    
