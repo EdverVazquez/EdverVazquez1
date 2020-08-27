@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		var Cadena_Numeros = prompt("Por favor escriba los numeros que desea contar y clasificar, seperandolos por coma. Por ejemplo: 1,2,3");
+
+		var Array_Numeros = Cadena_Numeros.split(',');
+		var Menor_Cero = 0;
+		var Igual_Cero = 0;
+		var Mayor_Cero = 0;
+
+
+		for(var i=0; i< Array_Numeros.length; i++)
+		{
+			if(Array_Numeros[i]<0)
+				Menor_Cero++;
+			else if(Array_Numeros[i]==0)
+				Igual_Cero++;
+			else
+				Mayor_Cero++;
+		}
+
+		alert("[" + Cadena_Numeros + "], se encontraron " + Menor_Cero + " numeros menor a cero, " + Igual_Cero + " numeros igual a cero y " + Mayor_Cero + " número mayor a cero");
+
+	</script>
+</html>

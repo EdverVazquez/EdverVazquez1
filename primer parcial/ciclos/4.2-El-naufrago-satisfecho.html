@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+	<script>
+		var Hamburguesa_Sencilla = 20;
+		var Hamburguesa_Doble = 25;
+		var Hamburguesa_Triple = 28;
+
+		var Total_Sencillas = prompt("¿Cuantas hamburguesas SENCILLAS($20) compró?");
+		var Total_Dobles = prompt("¿Cuantas hamburguesas DOBLES($25) compró?");
+		var Total_Triples = prompt("¿Cuantas hamburguesas TRIPLES($28) compró?");
+
+		var Pago_Tarjeta = confirm("¿Desea pagar con tarjeta de crédito (5% adicional)?");
+
+		var Total_Pago = (Hamburguesa_Sencilla * Total_Sencillas) + 
+							(Hamburguesa_Doble * Total_Dobles) + 
+							(Hamburguesa_Triple * Total_Triples);
+
+		if(Pago_Tarjeta)
+			Total_Pago *= 1.05;
+
+		alert("El total de su compra es: $" + Total_Pago);
+	</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		var Lote_Focos = prompt("Escriba la secuencia de colores de los focos que contiene el lote separados por coma, escriba una V para color verde, una B para color Blanco y una R para color Rojo. Ejemplo: V,R,V,B,R,B");
+
+		var Array_Focos = Lote_Focos.split(',');
+		var Focos_Verdes = 0;
+		var Focos_Blancos = 0;
+		var Focos_Rojos = 0;
+		
+		for(var i=0; i<Array_Focos.length; i++)
+		{
+			if(Array_Focos[i] == "V")
+				Focos_Verdes++;
+			else if(Array_Focos[i] == "B")
+				Focos_Blancos++;
+			else if(Array_Focos[i] == "R")
+				Focos_Rojos++;
+		}
+
+		alert("En el lote hay un total de: " + Array_Focos.length + "focos. Color verde: " + Focos_Verdes + ", color Blanco: " + Focos_Blancos + ", color Rojo: " + Focos_Rojos);
+
+	</script>
+</html>

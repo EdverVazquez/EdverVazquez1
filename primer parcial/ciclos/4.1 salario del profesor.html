@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        var salarioinicial = 1500;
+        var incremento=0;
+        var tiempo=0;
+        var salarioperiodo;
+
+        while (tiempo<6)
+        {
+            salarioperiodo=salarioinicial+incremento;
+            document.write("Su salario del periodo es; "+salarioperiodo+ "pesos, su incremento es de "+incremento+"pesos <br>");
+            incremento=(salarioperiodo*.1);
+            salarioinicial=salarioperiodo;
+            tiempo=tiempo+1;
+        }
+
+    </script>
+
+    <html>  
+        
+        
